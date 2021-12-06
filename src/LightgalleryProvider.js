@@ -6,6 +6,7 @@ import { isBrowser } from "browser-or-node";
 //
 import { lightgalleryContext } from "./lightgalleryContext";
 import { addPrefix } from "./utils";
+require("lightgallery.js/dist/css/lightgallery.css");
 
 const PLUGINS_LIST = [
     "lg-autoplay.js",
@@ -53,6 +54,7 @@ export class LightgalleryProvider extends Component {
         onCloseAfter: PT.func,
         // special callback that will call on loading of lightgallery.js
         onLightgalleryImport: PT.func,
+        categoryList: PT.array,
     };
 
     gallery_element = createRef();
@@ -297,6 +299,7 @@ export class LightgalleryProvider extends Component {
             dynamic: true,
             dynamicEl: current_group,
             index: item_idx,
+            categoryList: this.props.categoryList
         });
         this.setupListeners();
     };

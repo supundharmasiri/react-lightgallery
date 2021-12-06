@@ -35,7 +35,7 @@
         "lg-thumbnail.js": "^1.2.0",
         "lg-video.js": "^1.2.0",
         "lg-zoom.js": "^1.2.0",
-        "lightgallery.js": "^1.2.0",
+        "lightgallery.js": "git+https://github.com/supundharmasiri/lightgallery.js#master",
         "lodash": "^4.17.15",
         "prop-types": "^15.7.2",
         "uniqid": "^5.2.0"
